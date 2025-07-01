@@ -4,6 +4,13 @@ A modern, interactive Ant Smasher game built with HTML, CSS, and JavaScript. Sma
 
 ---
 
+## 🚀 Live Preview
+
+Try the game instantly:  
+👉 [Play Ant Smasher Online](https://sonseldeep.github.io/Ant-Smasher-Game/)
+
+---
+
 ## ✨ Features
 
 ### 🎮 **Core Gameplay**
