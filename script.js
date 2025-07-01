@@ -184,7 +184,10 @@ class AntSmasherGame {
     const spawnAntsRecursively = () => {
       if (!this.isPaused && this.isGameRunning) {
         this.spawnAnt();
-        this.antSpawnInterval = setTimeout(spawnAntsRecursively, this.getSpawnInterval());
+        this.antSpawnInterval = setTimeout(
+          spawnAntsRecursively,
+          this.getSpawnInterval()
+        );
       }
     };
     spawnAntsRecursively();
