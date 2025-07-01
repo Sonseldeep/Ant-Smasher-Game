@@ -329,7 +329,6 @@ body::before {
   }
 }
 
-/* Controls */
 .controls {
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(10px);
@@ -399,7 +398,6 @@ body::before {
   }
 }
 
-/* Milestone Popup Animation */
 .milestone-popup {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
   text-align: center;
@@ -424,7 +422,6 @@ body::before {
   }
 }
 
-/* Particle Effects */
 .particle {
   position: absolute;
   width: 8px;
@@ -449,7 +446,6 @@ body::before {
   }
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .game-header {
     padding: 10px 20px;
@@ -483,12 +479,10 @@ body::before {
   }
 }
 
-/* Hide overlay class */
 .hidden {
   display: none !important;
 }
 
-/* Game paused state */
 .game-paused .ant {
   animation-play-state: paused;
 }
