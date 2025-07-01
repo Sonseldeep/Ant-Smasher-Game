@@ -6,5 +6,67 @@
     <title>🐜 Ant Smasher Game</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="game-container">
+      <!-- Header -->
+      <header class="game-header">
+        <h1>🐜 Ant Smasher</h1>
+        <div class="score-board">
+          <div class="score-item">
+            <span class="label">Score:</span>
+            <span id="current-score">0</span>
+          </div>
+          <div class="score-item">
+            <span class="label">High Score:</span>
+            <span id="high-score">0</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- Game Area -->
+      <div class="game-area" id="game-area">
+        <div class="game-overlay" id="game-overlay">
+          <div class="overlay-content">
+            <h2>🐜 Ant Smasher Game</h2>
+            <p>Click the ants to smash them and earn points!</p>
+            <div class="instructions">
+              <div class="instruction-item">
+                🖱️ Click ants to smash them (+1 point)
+              </div>
+              <div class="instruction-item">
+                ✨ Special insects give bonus points!
+              </div>
+              <div class="instruction-item">
+                🦗 Cricket: 3 pts | 🐛 Caterpillar: 5 pts
+              </div>
+              <div class="instruction-item">
+                🕷️ Spider: 7 pts | 🪲 Beetle: 10 pts
+              </div>
+              <div class="instruction-item">
+                ⏰ Insects disappear after 4-9 seconds
+              </div>
+              <div class="instruction-item">🚀 Game gets faster over time</div>
+              <div class="instruction-item">⌨️ Press Space to pause/resume</div>
+            </div>
+            <button class="start-btn" id="start-btn">Start Game</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <div class="controls">
+        <button class="control-btn" id="restart-btn">🔄 Restart</button>
+        <button class="control-btn" id="pause-btn">⏸️ Pause</button>
+        <div class="game-stats">
+          <span>Time: <span id="game-time">0</span>s</span>
+          <span>Ants Missed: <span id="missed-ants">0</span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sound Effects (we'll create these programmatically) -->
+    <div id="sound-container"></div>
+
+    <script src="script.js"></script>
+  </body>
 </html>

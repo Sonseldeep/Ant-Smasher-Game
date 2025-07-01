@@ -6,9 +6,9 @@ A simple and fun Ant Smasher game built with HTML, CSS, and JavaScript. Smash as
 
 ## 🛠️ Tech Used
 
-- **HTML** (pure)
-- **CSS** (pure)
-- **JavaScript** (pure)
+- **HTML**
+- **CSS** (Vanilla)
+- **JavaScript** (Vanilla)
 
 ---
 
