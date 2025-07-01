@@ -176,16 +176,18 @@ class AntSmasherGame {
   startGame() {
     this.isGameRunning = true;
     this.isPaused = false;
+    clearTimeout(this.antSpawnInterval); // Clear any existing timeouts
     this.gameOverlay.classList.add("hidden");
     this.sounds.gameStart();
 
     // Start spawning ants
-    this.spawnAnt();
-    this.antSpawnInterval = setInterval(() => {
-      if (!this.isPaused) {
+    const spawnAntsRecursively = () => {
+      if (!this.isPaused && this.isGameRunning) {
         this.spawnAnt();
+        this.antSpawnInterval = setTimeout(spawnAntsRecursively, this.getSpawnInterval());
       }
-    }, this.getSpawnInterval());
+    };
+    spawnAntsRecursively();
 
     // Start game timer
     this.startGameTimer();
